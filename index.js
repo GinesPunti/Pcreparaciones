@@ -5,11 +5,10 @@ let typewriter = new Typewriter(titulo, {
 });
 
 typewriter.typeString('PC Reparaciones!')
-    .pauseFor(500)
+    .pauseFor(100)
     .deleteAll()
     .typeString('Reparamos Notebooks y computadoras de Escritorio')
-    .pauseFor(500)
-    .deleteChars(7)
+    .pauseFor(100)
     .start();
 
 
