@@ -1,0 +1,154 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(assets/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.container-form_login{
+    width: 60%;
+    height: 70vh;
+    border-radius: 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.479);
+    backdrop-filter: blur(5px);
+}
+
+h1{
+    text-align: center;
+}
+
+.login-form{
+    width: 50%;
+    padding: 10px;
+}
+
+.container-form{
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-small_error{
+    width: 70%;
+    text-align: center;
+    display: none;
+}
+
+.formulario-small_error-activo{
+    display: block;
+    margin-top: 10px;
+    font-size: .7rem;
+    color: #e74c3c;
+}
+
+
+.grupo-input{
+    width: 70%;
+    position: relative;
+    
+}
+
+.grupo-input input{
+    width: 100%;
+    height: 3.4vh;
+    outline: none;
+}
+
+.grupo-input input:focus{
+    border: 2px solid #0075ff;
+}
+
+.container-form-success_input{
+    border:2px solid #2ecc71;
+}
+
+.container-form-error_input{
+    border: 2px solid #e74c3c;
+}
+
+.container-form_small{
+    visibility: hidden;
+}
+
+
+label{
+    width: 70%;
+    font-size: .8rem;
+    text-align: start;
+}
+
+.container-form_image{
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-form_linkLog{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.red-logo{
+    margin: 15px;
+    width: 7%;
+    height: auto;
+}
+
+.cont-img_form{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-submit{
+    color: white;
+    width: 30%;
+    border: solid 1px black;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+
+.button-submit:hover{
+    color: black;
+    width: 35%;
+    border: solid 1px white;
+    background-color: rgba(128, 128, 128, 0.275);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:hover{
+    border-bottom: 2px solid white;
+}
+
+.cont-img_form{
+    width: 50%;
+    
+}
+
+img{
+    width: 70%;
+    height: auto;
+}

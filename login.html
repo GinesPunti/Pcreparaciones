@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/630adbca49.js" crossorigin="anonymous"></script>
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-form_login">
+        <form id="form" class="login-form">
+            <h1>Inicia Sesión</h1>
+            <div class="container-form" id="grupoUsuario">
+                <label for="username">Ingrese su nombre de Usuario</label>
+                <div class="grupo-input">
+                    <input type="text" name="username" id="username">
+                </div>
+                <small class="formulario-small_error">El usuario debe tener entre 4 y 16 digitos y solo puede contener letras, numeros y guiones </small>
+            </div>
+
+            <div class="container-form" id="grupoPassword">
+                <label for="">Ingrese la Contraseña</label>
+                <div class="grupo-input">
+                    <input type="password" name="password" id="password">
+                </div>
+            
+                <small class="formulario-small_error">La contraseña debe contener entre 4 y 12 digitos</small>
+            </div>
+
+            <div class="container-form">
+                <input class="button-submit" type="submit" name="submit" id="submit">
+            </div>
+            
+            <div class="container-form_image">
+                <img class="red-logo" src="assets/facebook.svg" alt="">
+                <img class="red-logo" src="assets/discord.svg" alt="">
+                <img class="red-logo" src="assets/instagram.svg" alt="">
+            </div>
+
+            <div class="container-form_linkLog">
+
+                <p>Todavia no tenes cuenta <span><a href="register.html">REGISTRATE</a></span></p>
+                
+            </div>
+    
+        </form>
+        <div class="cont-img_form">
+            <img src="assets/\PngItem_1831948.png" alt="">
+
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>

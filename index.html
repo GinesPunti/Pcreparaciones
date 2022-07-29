@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Pcproblems</title>
@@ -13,12 +14,11 @@
 <body>
     <header class="hero-head">
         <nav class="hero-navbar">
+            <img class="logo-nav_img" src="assets/PngItem_1831948.png" alt="">
             <ul class="hero-nav_ul">
-                <li class="hero-nav_cart"><img src="assets/cart.svg" alt=""></li>
-                <li class="hero-nav_li">Contact</li>
-                <li class="hero-nav_li">About us</li>
-                <li class="hero-nav_li">Login</li>
-                <li class="hero-nav_li">Register</li>
+                <li class="hero-nav_li"><a href="#footer">Contact</a></li>
+                <li class="hero-nav_li"><a href="#productos">Productos</a></li>
+                <li class="hero-nav_li"><a href="login.html">Login</a></li>
             </ul>
         </nav>
 
@@ -32,47 +32,45 @@
         <div class="hero-products_img"></div>
         <div class="hero-products_cards-container">
             <div class="hero-products_cards">
-                <h2>Reparacion de pc</h2>
-                <button class="button-service">Obtene tu servicio</button>
+                <button class="button-service" id="computer-reparation">Reparacion de pc</button>
             </div>
             <div class="hero-products_cards">
-                <h2>Intalacion de windows y office</h2>
-                <button class="button-service">Obtene tu servicio</button>
+                <button class="button-service" id="wind-office">Intalacion de windows y office</button>
             </div>
             <div class="hero-products_cards">
-                <h2>Mantenimiento general</h2>
-                <button class="button-service">Obtene tu servicio</button>
+                <button class="button-service" id="computer-maintenance">Mantenimiento general</button>
             </div>
         </div>
     </section>
 
-    <section class="hero-section_tienda">
-        <div class="tienda-container">
+    <section class="hero-section_tienda" id="productos">
+        <div class="tienda-container" id="tiendaContainer">
             <div class="graphic-card_container">
                 <img class="graphic-card_img" src="assets/tarjeta-de-video.png" alt="">
                 <p>Placas de video</p>
-                <button class="button-buy">Comprar</button>
+                <button class="button-buy " data-id="placas de video">Ver</button>
             </div>
+            
             <div class="procesator-container">
                 <img class="procesator-img" src="assets/microchip-processor-chip-cpu_108630.png" alt="">
                 <p>Procesadores</p>
-                <button class="button-buy">Comprar</button>
+                <button class="button-buy" data-id="procesadores">Ver</button>
             </div>
             <div class="motherboard-container">
                 <img class="motherboard-img" src="assets/motherboard-svgrepo-com.svg" alt="">
                 <p>Motherboards</p>
-                <button class="button-buy">Comprar</button>
+                <button class="button-buy" data-id="motherboards">Ver</button>
             </div>
             <div class="memory-card_container">
                 <img class="memory-card_img" src="assets/ram-memory-ram-svgrepo-com.svg" alt="">
                 <p>Memorias Ram</p>
-                <button class="button-buy">Comprar</button>
+                <button class="button-buy" data-id="memoria ram">Ver</button>
             </div>
         </div>
 
     </section>
 
-    <footer>
+    <footer id="footer">
         <div class="hero-footer_logos">
             <img class="hero-logos" src="assets/discord.svg" alt="">
             <img class="hero-logos" src="assets/facebook.svg" alt="">
@@ -81,9 +79,8 @@
 
         <div class="marca-register">
             <p>PcReparaciones <span><img class="register-logo" src="assets/registrado.svg" alt=""></span></p>
-            
-
         </div>
+        
         <div class="hero-footer_conditions">
             <div class="termn-conditions">
                 <h3>Terminos y condiciones</h3>

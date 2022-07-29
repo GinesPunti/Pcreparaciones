@@ -9,30 +9,53 @@
 </head>
 <body>
     <div class="container-form_register">
-        <form action="" class="register-form">
+        <form id="form" class="register-form">
             <h1>Register</h1>
-            <div class="container-form_username">
+            <div class="container-form" id="grupoUsuario">
                 <label for="">Ingrese su nombre de Usuario</label>
-                <input type="text" name="Username" id="username">
+                <div class="grupo-input">
+                    <input type="text" name="username" id="username">
+                </div>
+                <small class="formulario-small_error">El usuario debe tener entre 4 y 16 digitos y solo puede contener letras, numeros y guiones </small>
             </div>
 
-            <div class="container-form_email">
+            <div class="container-form" id="grupoEmail">
                 <label for="">Ingrese su Email</label>
-                <input type="email" name="email" id="email">
-                            
+                <div class="grupo-input">
+                    <input type="email" name="email" id="email">
+                </div>
+                <small class="formulario-small_error1">Ingrese un Correo valido</small>
             </div>
 
-            <div class="container-form_password1">
+            <div class="container-form" id="grupoPassword">
                 <label for="">Ingrese la Contraseña</label>
-                <input type="password" name="password1" id="password1">
+                <div class="grupo-input">
+                    <input type="password" name="password" id="password">
+                </div>
+                <small class="formulario-small_error2">La Contraseña debe tener entre 6 y 12 caracteres, entre ellos debe haber una Mayuscula y Numeros</small>
             </div>
 
-            <div class="container-form_confirmPassword2">
+            <div class="container-form" id="grupoPassword2">
                 <label for="">Confirme la Contraseña</label>
-                <input type="password" name="password2" id="password2">
+                <div class="grupo-input">
+                    <input type="password" name="password2" id="password2">
+                </div>
+                <small class="formulario-small_error3">Las Contraseñas no coinciden</small>
             </div>
-            <div class="container-form_submit">
+            <div class="container-form">
                 <input class="button-submit" type="submit" name="submit" id="submit">
+            </div>
+            
+            <div class="container-form_image">
+                <img class="red-logo" src="assets/facebook.svg" alt="">
+                <img class="red-logo" src="assets/discord.svg" alt="">
+                <img class="red-logo" src="assets/instagram.svg" alt="">
+            </div>
+
+            <div class="container-form_linkLog">
+
+                <p>Ya tienes cuenta? <span><a href="">Logueate</a></span> </p>
+                
             </div>
     
         </form>
